@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.video-link {
+    position: relative;
+    display: block;
+    max-width: 800px; /* ajuste se quiser */
+    margin: auto;
+}
+
+.video-link img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* botão de play */
+.video-link .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 70px;
+    height: 70px;
+    
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50%;
+}
+
+/* triângulo do play */
+.video-link .play::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    
+    border-style: solid;
+    border-width: 12px 0 12px 20px;
+    border-color: transparent transparent transparent white;
+}
+
+/* efeito hover */
+.video-link:hover .play {
+    background-color: rgba(0,0,0,0.85);
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: 0.3s;
+}

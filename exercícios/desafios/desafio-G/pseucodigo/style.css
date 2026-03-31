@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* estado normal */
+.foto {
+    width: 300px;
+    transition: 0.4s ease; /* anima tudo suavemente */
+}
+
+/* quando passa o mouse */
+.foto:hover {
+    transform: scale(1.1); /* aumenta */
+    opacity: 0.7; /* transparência */
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.4); /* sombra */
+}

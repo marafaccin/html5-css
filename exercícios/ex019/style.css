@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*tudo em html é id= e css é # em html é class = em css é ponto (.) */
+body {
+    background-color: rgb(180, 221, 163);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+h1 {
+    color: rgb(48, 99, 6);
+}
+h1#principal {  /*seletor personalizado*/
+    text-align: center;
+    background-color: rgb(4, 129, 4);
+    color: white;
+}
+h2 {
+    color: green;
+    
+}
+.basico {
+    color:rgb(9, 184, 62) ;
+}
+.intermediario {
+    color: olive;
+}
+.avancado {
+    color: rgb(7, 131, 100);
+}
+.destaque {
+    background-color: rgba(170, 120, 84, 0.582);
+}
